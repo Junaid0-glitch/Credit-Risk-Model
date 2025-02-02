@@ -1,8 +1,8 @@
 import streamlit as st
 from prediction_helper import predict 
 
-st.set_page_config(page_title="Lauki Finance: Credit Risk Modelling", page_icon="📊")
-st.title("Lauki Finance: Credit Risk Modelling")
+st.set_page_config(page_title="RiskGuard AI: Credit Risk Modelling", page_icon="📊")
+st.title("RiskGuard AI: Credit Risk Modelling")
 
 row1 = st.columns(3)
 row2 = st.columns(3)
