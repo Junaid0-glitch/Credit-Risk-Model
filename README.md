@@ -1,5 +1,7 @@
 # RiskGuard AI: Credit Risk Modelling 🚀
 
+Streamlit App Link : https://junaid-credit-risk-model.streamlit.app/
+
 ## 📌 Overview  
 **RiskGuard AI** is a machine learning-based credit risk modeling system designed to help Risk Units assess customer creditworthiness. It predicts the likelihood of loan default using historical loan and bureau data.
 
