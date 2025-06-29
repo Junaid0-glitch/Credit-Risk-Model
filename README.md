@@ -1,8 +1,6 @@
-```markdown
 # RiskGuard AI: Credit Risk Modelling 🚀
 
 🔗 **Live Streamlit App**: [https://credit-risk-model-zgqk3gy549secuhsiccbo7.streamlit.app/](https://credit-risk-model-zgqk3gy549secuhsiccbo7.streamlit.app/)  
-🔗 **FastAPI Endpoint**: `http://13.201.7.169:8000/predict_credit_risk`
 
 ---
 
@@ -44,15 +42,13 @@ To develop a robust and interpretable credit risk prediction model that:
 
 ---
 
----
-
 ## 📊 Model Evaluation
 
-| Metric              | Target   | Achieved |
-|---------------------|----------|----------|
-| AUC (Area Under Curve) | > 85%   | ✅ Achieved |
-| Gini Coefficient       | > 85    | ✅ Achieved |
-| KS Statistic           | > 40    | ✅ Achieved (High KS in early deciles) |
+| Metric                  | Target   | Achieved                           |
+|-------------------------|----------|------------------------------------|
+| AUC (Area Under Curve)  | > 85%    | ✅ Achieved                         |
+| Gini Coefficient        | > 85     | ✅ Achieved                         |
+| KS Statistic            | > 40     | ✅ Achieved (High KS in early deciles) |
 
 Other evaluations:
 - Classification Report
@@ -82,13 +78,11 @@ Other evaluations:
 
 A FastAPI server was built to handle model inference requests. It separates logic for young and older users internally, using the appropriate pre-trained model.
 
-````
-
 ### 🔐 Security
 
-* Uses `.env` locally via `python-dotenv`
-* Uses `secrets.toml` on Streamlit Cloud
-* Dockerized for container-based deployment
+- Uses `.env` locally via `python-dotenv`
+- Uses `secrets.toml` on Streamlit Cloud
+- Dockerized for container-based deployment
 
 ---
 
@@ -97,29 +91,26 @@ A FastAPI server was built to handle model inference requests. It separates logi
 The frontend was built using **Streamlit** to offer an intuitive UI for credit risk evaluation.
 
 ### Features:
-
-* Responsive inputs for key credit variables
-* Real-time risk prediction via FastAPI
-* Displays:
-
-  * Default probability
-  * Credit score
-  * Risk rating
+- Responsive inputs for key credit variables
+- Real-time risk prediction via FastAPI
+- Displays:
+  - Default probability
+  - Credit score
+  - Risk rating
 
 ### Deployment:
-
-* **Local**: via `streamlit run main.py`
-* **Cloud**: Hosted on [Streamlit Cloud](https://credit-risk-model-zgqk3gy549secuhsiccbo7.streamlit.app/)
-* Backend API integrated using `st.secrets` for secure variable handling
+- **Local**: via `streamlit run main.py`
+- **Cloud**: Hosted on [Streamlit Cloud](https://credit-risk-model-zgqk3gy549secuhsiccbo7.streamlit.app/)
+- Backend API integrated using `st.secrets` for secure variable handling
 
 ---
 
 ## 🐳 Docker & AWS Deployment
 
-* Docker image created for FastAPI backend
-* Pushed to DockerHub
-* Deployed on **AWS EC2 (Ubuntu)**
-* Port 8000 exposed for API access
-* Uvicorn used as ASGI server
+- Docker image created for FastAPI backend
+- Pushed to DockerHub
+- Deployed on **AWS EC2 (Ubuntu)**
+- Port 8000 exposed for API access
+- Uvicorn used as ASGI server
 
 ---
