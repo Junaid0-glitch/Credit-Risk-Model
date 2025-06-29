@@ -114,3 +114,4 @@ The frontend was built using **Streamlit** to offer an intuitive UI for credit r
 - Uvicorn used as ASGI server
 
 ---
+![Screenshot 2025-06-29 132552](https://github.com/user-attachments/assets/35f28216-2595-400e-9d85-e0806ddb28ae)
