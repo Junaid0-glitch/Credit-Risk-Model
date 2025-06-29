@@ -1,10 +1,10 @@
 import streamlit as st
 import requests
 import os
-from dotenv import load_dotenv
 
-load_dotenv()
-API_URL = os.getenv("API_URL")
+
+API_URL = st.secrets["API_URL"]
+
 
 
 st.set_page_config(page_title="RiskGuard AI: Credit Risk Modelling", page_icon="📊")
